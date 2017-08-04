@@ -23,14 +23,113 @@ body {
   vertical-align: top;
   text-align: center;
 }
+.btn {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
 																						/* header */
 .page-header {
 	min-height: 105px;
 	background: #39aae4;
 }
+.header-logo {
+  position: relative;
+  float: left;
+  width: 137px;
+  height: 78px;
+  margin: 14px 0 0 82px;
+  padding: 0;
+}
+.header-logo:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 21px;
+  height: 21px;
+  background: #f27551;
+  z-index: 4;
+}
+.header-logo:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 21px;
+  height: 21px;
+  background: #f27551;
+  z-index: 4;
+}
+.header-logo__text {
+  display: block;
+  position: relative;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  z-index: 15;
+  background: #39aae4;
+}
+.header-logo__text:first-child {
+  padding-top: 5px;
+  font-weight: 400;
+}
+.header-logo__text:last-child {
+  padding-bottom: 8px;
+}
+.main-nav {
+  float: right;
+  width: 915px;
+}
+.main-nav__list {
+  margin: 0; 
+  padding : 7px 0 0 27px;
+}
 .main-nav__item {
   display: inline-block;
   vertical-align: top;
+  padding-right: 19px;
+}
+.main-nav__item:last-child {
+ padding-right: 0; 
+}
+.main-nav__link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+.contacts {
+  float: right;
+  position: relative;
+}
+.contacts__text {
+  float: left;
+  font-weight: 400;
+  text-align: right;
+  margin: 0;
+  padding: 6px 21px 0 0;
+}
+.contacts__text:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -40px;
+  background-image: url("../img/header_phone.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+
+}
+.contacts__btn {
+  float: left;
+  width: 223px;
+  height: 36px;
+  background-color: #f27551;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px 0 0 0;
 }
 																						/* main */
 .slider {
@@ -41,13 +140,46 @@ body {
 }
 .steps {
   min-height: 365px;
+  font-size: 0;
+}
+.steps__list {
+  margin-top: 60px;
+  padding-left: 30px;
 }
 .steps__item {
-  width: 180px;
+  width: 190px;
+  padding-top: 100px;
+}
+.steps__item:nth-child(2n) {
+  padding-top: 240px;
 }
 .steps__text {
+  position: relative;
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
+}
+.steps__text:before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  width: 116px;
+  height: 115px;
+  margin-left: -58px;
+  border: 3px solid #f27551;
+}
+.steps__item:first-child:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 57px;
+  height: 57px;
+  background-image: url("../img/phone.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+
 }
 .our-product {
   height: 1406px;
@@ -55,8 +187,39 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.our-product__list {
+  padding: 0;
+  font-size: 0;
+}
+.our-product__title {
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-top: 45px;
+}
+.our-product__item {
+  position: relative;
+  width: 390px;
+  min-height: 400px;
+  margin: 0;
+}
+.our-product__item:after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 45px;
+  width: 87px;
+  height: 87px;
+  background-color: #f27551;
+  z-index: 5;
+}
+.our-product__img {
+  position: relative;
+  z-index: 9;
+}
 .our-product__text {
   text-align: center;
+  font-size: 24px;
 }
 .reviews {
   min-height: 500px;
@@ -74,6 +237,9 @@ body {
 }
 .footer-contacts {
   width: 395px;
+}
+.footer__title {
+  margin: 0;
 }
 .footer-map {
   position: absolute;
