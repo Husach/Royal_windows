@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Царские окна</title>
@@ -157,11 +157,35 @@
       </div>
     </div>
     
-    <div class="reviews">
+    <div class="reviews clearfix">
+      <div class="container">
+        <h3 class="reviews__title">Отзывы наших клиентов</h3>
+        <div class="reviews-img">
+          
+        </div>
+        <div class="reviews-info">
+          <h4 class="reviews-info__title">Нзарчук Евгений</h4>
+          <p class="reviews-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
 
     <div class="order">
-      
+      <div class="container">
+        <form action="#" method="post" class="main-form  order-form">
+          <h3 class="main-form__title  order-form__title">Заказать бесплатный замер и расчет стоимости остекления или отделки</h3>
+          <input type="text" name="name" id="name" class="main-form__input  order-form__input" placeholder="Ваше имя">
+          <label for="name">Ваше имя</label>
+          <input type="text" name="tel" id="tel" class="main-form__input  order-form__input" placeholder="Ваш телефон">
+          <label for="tel">Ваш email</label>
+          <button type="submit" class="btn order__btn">Отправить заявку</button>
+        </form>
+      </div>
     </div>
   </main>
 
