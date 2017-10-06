@@ -1,3 +1,6 @@
 _psd/
 _jpg/
-*.jpg
+node_modules/
+.DS_Store
+Thumbs.db
+*.sublime*
